@@ -5,6 +5,85 @@
         "layout": {
             "contentSize": "840px",
             "wideSize": "1100px"
+        },
+        "color": {
+            "defaultPalette": false,
+            "palette": [
+                {
+                    "name": "Primary",
+                    "slug": "primary",
+                    "color": "#181818"
+                },
+                {
+                    "name": "Secondary",
+                    "slug": "secondary",
+                    "color": "#E16363"
+                },
+                {
+                    "name": "Secondary dark",
+                    "slug": "secondary-dark",
+                    "color": "#DD4E4E"
+                }
+            ],
+            "gradients": [
+                {
+                    "name": "Secondary gradient",
+                    "slug": "secondary-gradient",
+                    "gradient": "linear-gradient(90deg, var(--wp--preset--color--secondary), var(--wp--preset--color--secondary-dark)"
+                }
+            ]
+        },
+        "typography": {
+            "fontFamilies": [
+                {
+                    "fontFamily": "Open Sans\",sans-serif",
+                    "slug": "open-sans",
+                    "name": "Open Sans"
+                },
+                {
+                    "fontFamily": "Libre Baskerville\",serif",
+                    "slug": "libre-baskerville",
+                    "name": "Libre Baskerville"
+                }
+            ]
+        },
+        "blocks": {
+            "core/heading": {
+                "color": {
+                    "background": false
+                }
+            }
         }
-    }
+    },
+    "styles": {
+        "blocks": {
+            "core/heading": {
+                "color": {
+                    "text": "var(--wp--preset--color--primary)"
+                }
+            }
+        },
+        "color": {
+            "text": "var(--wp--preset--color--primary)"
+        },
+        "elements": {
+            "link": {
+                "color": {
+                    "text": "var(--wp--preset--color--secondary)"
+                }
+            }
+        }
+    },
+    "templateParts": [
+        {
+            "name": "header",
+            "area": "header",
+            "title": "Header"
+        },
+        {
+            "name": "footer",
+            "area": "footer",
+            "title": "Footer"
+        }
+    ]
 }
