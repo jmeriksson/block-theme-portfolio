@@ -1,24 +1,20 @@
 {
-	"name": "menu-list",
+	"name": "portfolio-header",
 	"version": "0.1.0",
-	"description": "Simple dynamic block that lists all items in a menu.",
+	"description": "A block meant to be displyed at the top of the site.",
 	"author": "Mikael Eriksson",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",
 	"scripts": {
-		"build": "wp-scripts build --webpack-copy-php",
+		"build": "wp-scripts build",
 		"format": "wp-scripts format",
 		"lint:css": "wp-scripts lint-style",
 		"lint:js": "wp-scripts lint-js",
 		"packages-update": "wp-scripts packages-update",
 		"plugin-zip": "wp-scripts plugin-zip",
-		"start": "wp-scripts start --webpack-copy-php"
+		"start": "wp-scripts start"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^30.0.2"
-	},
-	"dependencies": {
-		"@wordpress/api-fetch": "^7.8.0",
-		"@wordpress/element": "^6.8.0"
+		"@wordpress/scripts": "^30.1.0"
 	}
 }

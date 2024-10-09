@@ -15,6 +15,11 @@
                     "color": "#181818"
                 },
                 {
+                    "name": "Primary light",
+                    "slug": "primary-light",
+                    "color": "#595959"
+                },
+                {
                     "name": "Secondary",
                     "slug": "secondary",
                     "color": "#E16363"
@@ -52,6 +57,12 @@
                 "color": {
                     "background": false
                 }
+            },
+            "btp/portfolio-header": {
+                "color": {
+                    "background": true,
+                    "text": true
+                }
             }
         }
     },
@@ -60,6 +71,18 @@
             "core/heading": {
                 "color": {
                     "text": "var(--wp--preset--color--primary)"
+                }
+            },
+            "btp/portfolio-header": {
+                "color": {
+                    "text": "var(--wp--preset--color--primary)"
+                },
+                "elements": {
+                    "link": {
+                        "color": {
+                            "text": "var(--wp--preset--color--primary)"
+                        }
+                    }
                 }
             }
         },

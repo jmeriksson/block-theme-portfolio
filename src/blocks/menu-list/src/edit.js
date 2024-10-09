@@ -4,14 +4,6 @@ import { SelectControl, PanelBody } from '@wordpress/components'
 import { useEffect, useState } from '@wordpress/element'
 import apiFetch from '@wordpress/api-fetch'
 
-/**
- * The edit function describes the structure of your block in the context of the
- * editor. This represents what the editor will render when the block is used.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-edit-save/#edit
- *
- * @return {Element} Element to render.
- */
 export default function Edit({ attributes, setAttributes }) {
 	const { selectedMenu } = attributes
 	const [menus, setMenus] = useState([])
@@ -61,7 +53,7 @@ export default function Edit({ attributes, setAttributes }) {
 			<InspectorControls>
 				<PanelBody title="Select menu">
 					{loading ? (
-						<p>Loading menus...</p>
+						<p>{ __('Loading menus...') }</p>
 					) : (
 						<SelectControl
 							label="Menus"

@@ -27,5 +27,6 @@ add_action( 'wp_enqueue_scripts', 'btp_style' );
 function btp_register_theme_blocks()
 {
     register_block_type( dirname(__FILE__) . '/src/blocks/menu-list/build/block.json' );
+    register_block_type( dirname(__FILE__) . '/src/blocks/portfolio-header/build/block.json' );
 }
 add_action( 'init', 'btp_register_theme_blocks' );
