@@ -26,6 +26,6 @@ add_action( 'wp_enqueue_scripts', 'btp_style' );
  */
 function btp_register_theme_blocks()
 {
-    // register_block_type( dirname(__FILE__) . '' );
+    register_block_type( dirname(__FILE__) . '/build/blocks/arrow-link/block.json' );
 }
 add_action( 'init', 'btp_register_theme_blocks' );

@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "btp/arrow-link",
+	"version": "0.1.0",
+	"title": "Arrow Link",
+	"category": "widgets",
+	"icon": "arrow-right-alt",
+	"description": "Displays a link with an arrow next to it.",
+	"example": {
+		"innerBlocks": [
+			{
+				"name": "core/paragraph",
+				"attributes": {
+					"content": "<a href=\"#\">Click here to learn more</a>"
+				}
+			}
+		]
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "btp",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"allowedBlocks": [
+		"core/paragraph"
+	]
+}
