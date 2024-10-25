@@ -80,13 +80,15 @@
         "typography": {
             "fontFamily": "var(--wp--preset--font-family--inter)",
             "fontWeight": "300",
-            "fontSize": "1rem"
+            "fontSize": "1.125rem",
+            "lineHeight": "1.5"
         },
         "blocks": {
             "core/heading": {
                 "typography": {
                     "fontFamily": "var(--wp--preset--font-family--serif)",
-                    "fontWeight": "700"
+                    "fontWeight": "700",
+                    "lineHeight": "1.2"
                 }
             },
             "core/site-title": {
@@ -123,10 +125,23 @@
             "link": {
                 "color": {
                     "text": "var(--wp--preset--color--tertiary)"
+                },
+                ":hover": {
+                    "color": {
+                        "text": "var(--wp--preset--color--tertiary-light)"
+                    }
+                },
+                ":active": {
+                    "color": {
+                        "text": "var(--wp--preset--color--tertiary-dark)"
+                    }
                 }
             },
             "h1": {
                 "css": "font-size: clamp(3rem, 5vw, 5rem);"
+            },
+            "h2": {
+                "css": "font-size: clamp(2rem, 2.8vw, 3rem);"
             }
         }
     },
