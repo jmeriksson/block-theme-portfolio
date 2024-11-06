@@ -1,0 +1,29 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "btp/navigation",
+	"version": "0.1.0",
+	"title": "Navigation",
+	"category": "widgets",
+	"icon": "menu-alt3",
+	"description": "Displays a navigation for the theme.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "btp",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	"attributes": {
+		"homeUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"siteTitle": {
+			"type": "string",
+			"default": "Site Title"
+		}
+	}
+}

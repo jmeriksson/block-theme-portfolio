@@ -1,19 +1,22 @@
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"backgroundColor":"contrast","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-contrast-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)">
-	<!-- wp:group {"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|base-2"}}}},"textColor":"base-2","layout":{"type":"flex","flexWrap":"wrap","orientation":"horizontal","justifyContent":"space-between"}} -->
-	<div class="wp-block-group alignwide has-base-2-color has-text-color has-link-color">
-		<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-		<div class="wp-block-group">
-			<!-- wp:site-title {"level":0,"textAlign":"center"} /-->
-		</div>
-		<!-- /wp:group -->
-	
-		<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-		<div class="wp-block-group">
-			<!-- wp:navigation {"ref":5,"overlayBackgroundColor":"primary","overlayTextColor":"white","layout":{"type":"flex","orientation":"horizontal","justifyContent":"center"}} /-->
-		</div>
-		<!-- /wp:group -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"0","right":"0"}}},"backgroundColor":"contrast","layout":{"type":"constrained","wideSize":"1280px"}} -->
+<div class="wp-block-group has-contrast-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:0;padding-bottom:var(--wp--preset--spacing--40);padding-left:0">
+	<!-- wp:btp/navigation {"homeUrl":"https://mikaeleriksson.test","siteTitle":"Mikael Eriksson"} -->
+	<div class="wp-block-btp-navigation">
+		<nav class="btp-navigation" id="js-btp-navigation">
+			<a class="btp-navigation__site-title" href="https://mikaeleriksson.test">Mikael Eriksson</a>
+			<button id="js-btp-navigation__offcanvas-toggle" class="btp-navigation__offcanvas-toggle" aria-expanded="false" aria-controls="js-btp-navigation__menu" aria-label="Open mobile menu" data-open-text="Open mobile menu" data-close-text="Close mobile menu">
+				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" class="close-icon">
+					<path fill="currentColor" d="m13.79 10 5.687-5.686a1.787 1.787 0 0 0 0-2.527L18.213.523a1.787 1.787 0 0 0-2.527 0L10 6.21 4.314.523a1.787 1.787 0 0 0-2.527 0L.523 1.787a1.787 1.787 0 0 0 0 2.527L6.21 10 .523 15.686a1.787 1.787 0 0 0 0 2.527l1.264 1.264c.698.697 1.83.697 2.527 0L10 13.79l5.686 5.686c.698.697 1.83.697 2.527 0l1.264-1.264a1.787 1.787 0 0 0 0-2.527L13.79 10Z"></path>
+				</svg>
+				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none" class="hamburger-icon">
+					<path fill="currentColor" d="M.714 3.464h18.572c.394 0 .714-.32.714-.714V.964a.714.714 0 0 0-.714-.714H.714A.714.714 0 0 0 0 .964V2.75c0 .395.32.714.714.714Zm0 7.143h18.572c.394 0 .714-.32.714-.714V8.107a.714.714 0 0 0-.714-.714H.714A.714.714 0 0 0 0 8.107v1.786c0 .394.32.714.714.714Zm0 7.143h18.572c.394 0 .714-.32.714-.714V15.25a.714.714 0 0 0-.714-.714H.714A.714.714 0 0 0 0 15.25v1.786c0 .394.32.714.714.714Z"></path>
+				</svg>
+			</button>
+			<div class="btp-navigation__menu" id="js-btp-navigation__menu">
+				<!-- wp:page-list /-->
+			</div>
+		</nav>
 	</div>
-	<!-- /wp:group -->
+	<!-- /wp:btp/navigation -->
 </div>
 <!-- /wp:group -->
