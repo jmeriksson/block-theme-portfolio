@@ -59,7 +59,15 @@ class Project_Post_Type extends Loader {
                 'has_archive' => true,
                 'rewrite' => [ 'slug' => 'projects' ],
                 'delete_with_user' => false,
-                'register_meta_box_cb' => [ $this, 'register_meta_boxes' ]
+                'register_meta_box_cb' => [ $this, 'register_meta_boxes' ],
+                'template' => [
+                    [
+                        'core/pattern',
+                        [
+                            'slug' => 'btp/project-header'
+                        ]
+                    ]
+                ]
             ]
         );
     }
