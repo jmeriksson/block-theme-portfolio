@@ -81,6 +81,14 @@
                     ]
                 }
             ]
+        },
+        "blocks": {
+            "core/heading": {
+                "typography": {
+                    "customFontSize": false,
+                    "defaultFontSizes": false
+                }
+            }
         }
     },
     "styles": {
@@ -128,6 +136,15 @@
                 "color": {
                     "background": "var(--wp--preset--color--primary)"
                 }
+            },
+            "core/image": {
+                "elements": {
+                    "caption": {
+                        "typography": {
+                            "fontSize": "0.875rem"
+                        }
+                    }
+                }
             }
         },
         "color": {
@@ -154,7 +171,7 @@
                 "css": "font-size: clamp(3rem, 5vw, 5rem);"
             },
             "h2": {
-                "css": "font-size: clamp(2rem, 2.8vw, 3rem);"
+                "css": "font-size: clamp(2rem, 2.8vw, 3rem); margin-bottom: 1.5rem;"
             }
         }
     },
