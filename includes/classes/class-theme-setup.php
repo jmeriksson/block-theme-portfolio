@@ -41,6 +41,7 @@ class Theme_Setup extends Loader {
     public function register_theme_blocks() : void {
         register_block_type( get_stylesheet_directory() . '/build/blocks/arrow-link/block.json' );
         register_block_type( get_stylesheet_directory() . '/build/blocks/navigation/block.json' );
+        register_block_type( get_stylesheet_directory() . '/build/blocks/project-grid/block.json' );
     }
 
     /**
