@@ -25,5 +25,8 @@
 			"type": "string",
 			"default": "Site Title"
 		}
-	}
+	},
+	"allowedBlocks": [
+		"core/page-list"
+	]
 }
