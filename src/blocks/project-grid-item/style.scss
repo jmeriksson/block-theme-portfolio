@@ -1,0 +1,27 @@
+.wp-block-btp-project-grid-item {
+	.project-card__image {
+		margin-bottom: 0;
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
+
+	.project-card__text-content {
+		display: -webkit-box;
+		line-clamp: 5;
+		-webkit-line-clamp: 5;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		margin-bottom: 1rem;
+	}
+
+	.project-card__heading {
+		margin-top: 0;
+		margin-bottom: .5rem;
+	}
+
+	.project-card__excerpt {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
