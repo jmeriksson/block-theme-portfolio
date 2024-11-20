@@ -15,6 +15,25 @@
 
 	.btp-navigation__menu {
 		display: none;
+		list-style: none;
+
+		> li {
+			display: inline;
+			
+			&:not(:last-child) {
+				margin-right: 1rem;
+			}
+		}
+
+		> li > a {
+			color: currentColor;
+			text-decoration: none;
+
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 
 		ul {
 			padding-left: 0;

@@ -27,6 +27,7 @@
 		}
 	},
 	"allowedBlocks": [
-		"core/page-list"
+		"core/page-list",
+		"core/navigation-link"
 	]
 }

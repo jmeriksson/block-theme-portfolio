@@ -4,6 +4,7 @@ import { useSelect } from '@wordpress/data';
 import { useEffect } from '@wordpress/element';
 import { HamburgerIcon } from './components/HamburgerIcon';
 import { CloseIcon } from './components/CloseIcon';
+import './editor.scss';
 
 export default function Edit({ attributes, setAttributes }) {
 	const { allowedBlocks } = attributes;
