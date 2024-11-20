@@ -57,7 +57,7 @@ export default function Edit({attributes, setAttributes}) {
 
 	// Set the first project as selected when availableProjects is available
 	useEffect(() => {
-		if (availableProjects && availableProjects.length > 0) {
+		if (!selectedProject && availableProjects && availableProjects.length > 0) {
 			handleProjectSelection(availableProjects[0].value);
 		}
 	}, [availableProjects]);
