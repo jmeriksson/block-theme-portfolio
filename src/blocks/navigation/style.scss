@@ -66,8 +66,9 @@
 
 	.offcanvas-is-open .btp-navigation__menu {
 		display: flex;
-		align-items: flex-start;
-		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
 		position: absolute;
 		padding-top: 7.5rem;
 		top: 100%;
@@ -75,6 +76,16 @@
 		width: 100%;
 		background-color: var(--wp--preset--color--primary);
 		z-index: 999;
+
+		> li {
+			display: block;
+			font-weight: bold;
+			
+			&:not(:last-child) {
+				margin-right: 0;
+				margin-bottom: 1rem;
+			}
+		}
 
 		ul {
 			flex-direction: column;
